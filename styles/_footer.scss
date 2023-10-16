@@ -1,0 +1,75 @@
+.footer {
+  padding-top: 288px;
+  padding-bottom: 108px;
+
+  @include xl-max {
+    padding-top: 208px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 200px;
+
+    @include xl-max {
+      flex-direction: column;
+      gap: 75px;
+    }
+  }
+
+  &__site-map {
+    display: flex;
+    gap: 75px;
+
+    @include xl-max {
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__list-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  &__links-list {
+    display: flex;
+    flex-direction: column;
+    width: 121px;
+    gap: 19px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__contact {
+    gap: 10px;
+  }
+
+  &__address {
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  &__social {
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    gap: 24px;
+  }
+}
