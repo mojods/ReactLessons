@@ -20,7 +20,7 @@
     display: flex;
     gap: 75px;
 
-    @include xl-max {
+    @include sm-max {
       flex-direction: column;
     }
   }
@@ -40,7 +40,8 @@
   &__links-list {
     display: flex;
     flex-direction: column;
-    width: 121px;
+    width: 100%;
+    max-width: 121px;
     gap: 19px;
   }
 

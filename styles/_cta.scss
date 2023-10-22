@@ -11,15 +11,13 @@
   &__content {
       display: flex;
       height: 370px;
-      gap: 36px;
 
       border-radius: 33px;
       background: #343434;
 
-      @include xl-max {
+      @include lg-max {
         flex-direction: column;
         align-items: center;
-        gap: 104px;
 
         border-radius: 0px;
         height: auto;
@@ -34,23 +32,24 @@
     flex-direction: column;
     align-items: flex-start;
 
-    width: 504px;
+    margin-right: 36px;
     margin-left: 94px;
-    gap: 37px;    
+    width: 100%;
+    max-width: 504px;
 
-    @include xl-max {
+    @include lg-max {
       align-items: center;
-      margin-top: 104px;
-
-      margin-left: 0px;
-      width: 408px;
+      margin: 104px 0px;
+      width: 100%;
+      max-width: 408px;
     }
   }
 
   &__content-text {
     font-size: 52px;
+    margin-bottom: 37px;
 
-    @include xl-max {
+    @include lg-max {
       text-align: center;
       line-height: 62px;
 
@@ -73,9 +72,10 @@
     border-bottom-right-radius: 33px;
     height: 370px;
 
-    @include xl-max {
+    @include lg-max {
       border-bottom-right-radius: 0px;
-      width: 408px;
+      width: 100%;
+      max-width: 408px;
       height: 384px;
     }
   }
